@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script type="text/javascript" src="numberToWord.js">
+    </script>
+
+    <link rel="stylesheet" href="numberToWord.css">
+  </head>
+  <body>
+    <form class="the" action="index.html" method="post">
+    <table cellpadding="7">
+      <tr>
+        <td id="numbLabel">ቁጥሩን ያስገቡ</td>
+        <td class="lasts" id="langLabel">ቋንቋ ይምረጡ</td>
+      </tr>
+      <tr >
+        <td> <input type="number" id="numb" name="numb" value="" maxlength="12"  onkeyup="prints()"> </td>
+        <td class="lasts">
+          <select class="lang" name="lang" id="lang"  onclick="prints()">
+              <option value="amharic">አማርኛ</option>
+              <option value="english">English</option>
+           </select> </td>
+      </tr>
+           <tr>
+        <td colspan="2" id="answer"></td>
+      </tr>
+    </table>
+    </form>
+  </body>
+</html>
